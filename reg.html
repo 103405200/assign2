@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by anonymous (http://jsbin.com/tuqadizace/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+
+<meta name="robots" content="noindex">
+   
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>報名表單</title>
+<style id="jsbin-css">
+body{
+
+background: rgb(179,220,237); /* Old browsers */
+background: -moz-linear-gradient(left,  rgb(179,220,237) 0%, rgb(255,201,211) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgb(179,220,237) 0%,rgb(255,201,211) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgb(179,220,237) 0%,rgb(255,201,211) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#ffc9d3',GradientType=1 ); /* IE6-9 */
+
+}
+
+input:valid {  
+  background:#e0ffdd;  
+} 
+
+select:valid {  
+  background:#e0ffdd;  
+} 
+
+ .question {
+  
+   position: absolute;    
+    top: 50%;              
+    left: 50%;
+    margin-top: -180px;     
+    margin-left: -90px;
+}
+
+
+
+input{
+    border:none;
+}
+
+select{
+    border:none;
+  
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid #555;
+}
+#who{width:130px; height:30px;  margin-bottom:5px;}
+#call{width:130px; height:30px; margin-bottom:5px;}
+#email{width:130px; height:30px; margin-bottom:5px;}
+#major{width:135px; height:30px; margin-bottom:5px;}
+#birth{width:130px; height:30px; margin-bottom:5px;}
+
+input[type=submit]{width:130px; background-color:#32906e; height:30px; color:white;}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="question">
+  <h1>報名表單</h1>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLScM4B6u7nOkNQqUOlSBn7fKXm5cjuno14nyCKRlA4XyjSY9Qg/formResponse">
+  <label for="who"></label> <input required="required" type="text" name="entry.1339495092" id="who" placeholder="姓名"> 
+  
+<br>
+  
+   <label for="major"></label>
+  <select name="entry.1944781450" id="major" required="required">
+  <option value = "" disabled selected >請選擇</option>
+  <option value = "文學院">文學院</option>
+  <option value = "理學院">理學院</option>
+  <option value = "社會科學學院">社會科學學院</option>
+  <option value = "法學院">法學院</option>
+  <option value = "商學院">商學院</option>
+  <option value = "外國語文學院">外國語文學院</option>
+  <option value = "傳播學院">傳播學院</option>
+  <option value = "國際事務學院">國際事務學院</option>
+  <option value = "教育學院">教育學院</option>
+  
+   </select> 
+    
+    
+ <br>
+ 
+  
+  <label for="call"></label> 
+<input  required="required" placeholder="手機" type="tel" pattern="[0-9]{10}"  name="entry.795504394" id="call" ><br>
+  
+  <label for="email"></label> 
+<input required="required" placeholder="信箱" type="email" name="entry.560282373" id="email" ><br>
+  
+   <label for="birth"></label> 
+<input required="required"  type="date" name="entry.324774019" id="birth" max="2017-03-08" ><br>
+
+  
+  
+<input type="hidden"  name="entry.189820201" id="me" value="103405200"><br>
+  
+  <input type="submit" id="go" value="註冊" >
+
+
+ </form> 
+ </div>
+</body>
+</html>
